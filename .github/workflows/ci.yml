@@ -24,7 +24,7 @@ jobs:
           password: ${{secrets.GITHUB_TOKEN}}
 
       - name: Build image
-        run: docker build -t ghcr.io/maryoussef149/devops-app:latest .
+        run: docker build -t ghcr.io/mariamayman149/devops-app:latest .
 
       - name: Push image
-        run: docker push ghcr.io/maryoussef149/devops-app:latest
+        run: docker push ghcr.io/mariamayman149/devops-app:latest

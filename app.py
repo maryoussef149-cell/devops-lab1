@@ -6,4 +6,8 @@ app = Flask(__name__)
 def home():
 	return "Hello DevOps!"
 
+@app.route("/health")
+def health():
+    return "OK", 200
+
 app.run(host="0.0.0.0", port=5000)

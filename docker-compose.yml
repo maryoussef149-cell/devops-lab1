@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8080:5000"
+
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_PASSWORD: example

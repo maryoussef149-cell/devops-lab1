@@ -20,7 +20,7 @@ spec:
       containers:
         - name: devops-app
           image: ghcr.io/maryoussef149-cell/devops-app:latest
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           ports:
             - containerPort: 5000
           resources:
